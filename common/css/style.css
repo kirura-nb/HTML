@@ -67,10 +67,17 @@ li {
 }
 .menu_box a div p {
     position: absolute;
-    top: 60px;
+    padding: 60px 0 0 55px;
     font-size: 24px;
     color: white;
 }
+.menu_box a:nth-child(3) div p {
+    padding-left: 45px;
+}
+.menu_box a:nth-child(4) div p {
+    padding-left: 35px;
+}
+
 
 /* main */
 .home1 {
@@ -79,9 +86,6 @@ li {
 .home1 h1 {
     margin: 0;
 }
-
-
-
 
 /* MENU */
 /* MENU  tab */
