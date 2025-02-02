@@ -10,13 +10,31 @@
 </head>
 <body>
     <header id="header">
-        <div id="menu_ber">
-            <img src="../common/images/home/logo.png" alt="LOGO">
-            <!-- ハンバーガーメニュー -->
+        <div id="top_menu">
+            <div class="logo">
+                <a href="./index.html">
+                    <div>
+                        <img src="../common/images/home/logo.png" alt="LOGO">
+                    </div>
+                </a>
+            </div>
+            <nav class="menu_box">
+                <ul id="header_menu">
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="../menu/index.html">MENU</a></li>
+                    <li><a href="../access/index.html">ACCESS</a></li>
+                    <li><a href=".index.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div id="hamburger" class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
         </div>
-        <img src="../common/images/menu/menu-top.jpg" alt="menu-top">
-        <h1>CONTACT</h1>
+
+        <img src="../common/images/contact/contact_top.jpg" alt="コンタクト" class="top_img">
+        <h1 class="h1_7">CONTACT</h1>
     </header>
+
     <main id="main">
 
     </main>
@@ -29,5 +47,8 @@
             <a href="./index.html">CONTACT</a>
         </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../common/js/script.js"></script>
 </body>
 </html>
