@@ -10,41 +10,92 @@
 </head>
 <body>
     <header id="header">
-        <div id="menu_ber">
-            <img src="../common/images/home/logo.png" alt="LOGO">
-            <!-- ハンバーガーメニュー -->
+        <div id="top_menu">
+            <div class="logo">
+                <a href="./index.html">
+                    <div>
+                        <img src="../common/images/home/logo.png" alt="LOGO">
+                    </div>
+                </a>
+            </div>
+            <nav class="menu_box">
+                <ul id="header_menu">
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="../menu/index.html">MENU</a></li>
+                    <li><a href="./index.html">ACCESS</a></li>
+                    <li><a href="../contact/index.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div id="hamburger" class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
         </div>
-        <img src="../common/images/access/access-top.jpg" alt="access-top">
-        <h1>ACCESS</h1>
+
+        <img src="../common/images/access/access-top.jpg" alt="店外写真" class="top_img">
+        <h1 class="h1_6">ACCESS</h1>
     </header>
-    <main id="main">
-        <div>
-            <h2>STORE INFO</h2>
-        </div>
-        <div>
-            <h2>MAP</h2>
-            <section>
-                <h3>Main stor</h3>
-                <img src="../common/images/access/学園マップ.jpg" alt="簡易マップ">
+
+    <main id="main" class="access_main">
+        <h2>STORE INFO</h2>
+        <div class="store_info">
+            <div class="text_section">
+                <h3>ADRESS</h3>
                 <p>
-                    TRAIN<br>
+                    〒690-0001<br>
+                    島根県松江市東朝日町74
+                </p>
+            </div>
+            <div class="text_section">
+                <h3>TEL</h3>
+                <p><a href="tel:0852-31-1500">TEL:0852-31-1500</a></p>
+            </div>
+            <div class="text_section">
+                <h3>FAX</h3>
+                <p>0852-31-1501</p>
+            </div>
+            <div class="text_section">
+                <h3>OPEN</h3>
+                <p>10:00~20:00(L.O 19:30)</p>
+            </div>
+            <div class="text_section">
+                <h3>HOLIDAYS</h3>
+                <p>Wednesday</p>
+            </div>
+            <div class="text_section">
+                <h3>FACILITY</h3>
+                <p>Diaper changing room / free wifi / barrier-free / power available in some seats</p>
+            </div>
+            <div class="text_section">
+                <h3>METHOD OF PAYMENT</h3>
+                <p>Cash / Credit card / Electronic money / Transportation IC</p>
+            </div>
+        </div>
+        <div class="access_map">
+            <h2>MAP</h2>
+            <section class="map_sec">
+                <img src="../common/images/access/学園マップ.jpg" alt="簡易マップ">
+                <div></div>
+                <h3>TRAIN</h3>
+                <p>
                     ・&lt;JR&gt;松江駅から徒歩6分<br>
                     ・&lt;一畑電車&gt;松江しんじ湖温泉駅から徒歩37分<br>
-                    <br>
-                    CAR<br>
-                    ・松江中央ICから6分<br>
-                    <br>
-                    BUS
+                </p>
+                <h3>CAR</h3>
+                <p>
+                    ・松江中央ICから6分
+                </p>
+                <h3>BUS</h3>
+                <p>
                     ・&lt;一畑電車：松江しんじ湖温泉駅&gt;<br>
                     　竹矢（行）～中央郵便局前（着）<br>
                     　徒歩4分<br>
                 </p>
+                <button>
+                    <a href="https://www.google.com/maps/place/%E6%9D%BE%E6%B1%9F%E7%B7%8F%E5%90%88%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9%E3%82%AB%E3%83%AC%E3%83%83%E3%82%B8/@35.4620077,133.0650658,17.25z/data=!4m6!3m5!1s0x355704e51688e8bb:0xf1828ba539a0e782!8m2!3d35.4623407!4d133.0664055!16s%2Fg%2F1thd4jmw?entry=ttu&g_ep=EgoyMDI1MDEyMi4wIKXMDSoASAFQAw%3D%3D">
+                        GOOGLE MAP
+                    </a>
+                </button>
             </section>
-            <button>
-                <a href="https://www.google.com/maps/place/%E6%9D%BE%E6%B1%9F%E7%B7%8F%E5%90%88%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9%E3%82%AB%E3%83%AC%E3%83%83%E3%82%B8/@35.4620077,133.0650658,17.25z/data=!4m6!3m5!1s0x355704e51688e8bb:0xf1828ba539a0e782!8m2!3d35.4623407!4d133.0664055!16s%2Fg%2F1thd4jmw?entry=ttu&g_ep=EgoyMDI1MDEyMi4wIKXMDSoASAFQAw%3D%3D">
-                    GOOGLE MAP
-                </a>
-            </button>
         </div>
     </main>
     <footer id="footer">
@@ -56,5 +107,8 @@
             <a href="../contact/index.html">CONTACT</a>
         </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../common/js/script.js"></script>
 </body>
 </html>

@@ -6,38 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HOME</title>
     <link rel="stylesheet" href="./common/css/style.css">
-    <script src="./common/js/script.js"></script>
 </head>
 <body>
     <header id="header">
         <div id="top_menu">
-            <img src="./common/images/home/main-visual.jpg" alt="店内写真" class="top_img">
-            <a href="./index.html" class="logo">
-                <div>
+            <div class="logo">
+                <a href="./index.html">
                     <div>
                         <img src="./common/images/home/logo.png" alt="LOGO">
                     </div>
-                </div>
-            </a>
-            <div class="menu_box">
-                <a href="./index.html">
-                    <div><p>HOME</p></div>
-                </a>
-                <a href="./menu/index.html">
-                    <div><p>MENU</p></div>
-                </a>
-                <a href="./access/index.html">
-                    <div><p>ACCESS</p></div>
-                </a>
-                <a href="./contact/index.html">
-                    <div><p>CONTACT</p></div>
                 </a>
             </div>
+            <nav class="menu_box">
+                <ul id="header_menu">
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./menu/index.html">MENU</a></li>
+                    <li><a href="./access/index.html">ACCESS</a></li>
+                    <li><a href="./contact/index.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div id="hamburger" class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
         </div>
-        <!-- <div id="menu_ber">
-            <img src="./common/images/home/logo.png" alt="LOGO">
-            ハンバーガーメニュー
-        </div> -->
+
+        <img src="./common/images/home/main-visual.jpg" alt="店内写真" class="top_img">
+        <h1>HOME</h1>
     </header>
 
     <main id="main">
@@ -55,21 +49,31 @@
                 </p>
             </section>
             <div class="food_scroll">
-                <img src="./common/images/home/food_01.jpg" alt="フード1">
-                <img src="./common/images/home/food_02.jpg" alt="フード2">
-                <img src="./common/images/home/slide_01.png" alt="サイド1">
-                <img src="./common/images/home/slide_02.png" alt="サイド2">
-                <img src="./common/images/home/slide_03.png" alt="サイド3">
-                <img src="./common/images/home/slide_04.png" alt="サイド4">
-                <img src="./common/images/home/slide_05.png" alt="サイド5">
-                <img src="./common/images/home/slide_06.png" alt="サイド6">
-                <img src="./common/images/home/slide_07.png" alt="サイド7">
-                <img src="./common/images/home/slide_08.png" alt="サイド8">
-                <img src="./common/images/home/slide_09.png" alt="サイド9">
-                <img src="./common/images/home/slide_10.png" alt="メニュ10">
-                <img src="./common/images/home/drink_01.jpg" alt="ドリンク1">
-                <img src="./common/images/home/drink_02.jpg" alt="ドリンク2">
+                <div class="food_wrapper">
+                    <img src="./common/images/home/slide_01.png" alt="スライド1">
+                    <img src="./common/images/home/slide_02.png" alt="スライド2">
+                    <img src="./common/images/home/slide_03.png" alt="スライド3">
+                    <img src="./common/images/home/slide_04.png" alt="スライド4">
+                    <img src="./common/images/home/slide_05.png" alt="スライド5">
+                    <img src="./common/images/home/slide_06.png" alt="スライド6">
+                    <img src="./common/images/home/slide_07.png" alt="スライド7">
+                    <img src="./common/images/home/slide_08.png" alt="スライド8">
+                    <img src="./common/images/home/slide_09.png" alt="スライド9">
+                    <img src="./common/images/home/slide_10.png" alt="スライド10">
+                    <!-- ループ用 -->
+                    <img src="./common/images/home/slide_01.png" alt="スライド1">
+                    <img src="./common/images/home/slide_02.png" alt="スライド2">
+                    <img src="./common/images/home/slide_03.png" alt="スライド3">
+                    <img src="./common/images/home/slide_04.png" alt="スライド4">
+                    <img src="./common/images/home/slide_05.png" alt="スライド5">
+                    <img src="./common/images/home/slide_06.png" alt="スライド6">
+                    <img src="./common/images/home/slide_07.png" alt="スライド7">
+                    <img src="./common/images/home/slide_08.png" alt="スライド8">
+                    <img src="./common/images/home/slide_09.png" alt="スライド9">
+                    <img src="./common/images/home/slide_10.png" alt="スライド10">
+                </div>
             </div>
+            
         </div>
         <div class="MENU">
             <h2>MENU</h2>
@@ -77,29 +81,45 @@
                 <h3>FOOD</h3>
                 <section>
                     <img src="./common/images/home/food_01.jpg" alt="フード1">
-                    <h4>name</h4>
-                    <p>説明</p>
+                    <h4>濃厚カルボナーラ</h4>
+                    <p>
+                        イタリアの伝統的なレシピを再現した濃厚なカルボナーラ。新鮮な卵とチーズを絡めたクリーミーなソースに、香ばしく炒めたパンチェッタが
+                        アクセント。黒胡椒のスパイシーな風味が全体を引き締め、絶妙なハーモニーを奏でます。一口ごとに広がるコクと旨味を、ぜひご堪能ください。
+                    </p>
                 </section>
                 <section>
                     <img src="./common/images/home/food_02.jpg" alt="フード2">
-                    <h4>name</h4>
-                    <p>説明</p>
+                    <h4>フレッシュバゲットサンド</h4>
+                    <p>
+                        外はカリッと中はふんわりと焼き上げたバゲットに、新鮮なレタス、ジューシーなミニトマト、シャキシャキのきゅうりをたっぷりとサンド。
+                        クリーミーなチーズがコクを加え、シンプルながらも深い味わいに仕上げました。爽やかな野菜の食感と香ばしいパンの風味をお楽しみください。
+                    </p>
                 </section>
-                <p>MORE → </p>
+                <div>
+                    <a href="./menu/index.html?tab=food" class="food_radio">MORE →</a>
+                </div>
             </div>
-            <div class="DEINK">
-                <h3>DEINK</h3>
+            <div class="DRINK">
+                <h3>DRINK</h3>
                 <section>
                     <img src="./common/images/home/drink_01.jpg" alt="ドリンク1">
-                    <h4>name</h4>
-                    <p>説明</p>
+                    <h4>ハートラテ</h4>
+                    <p>
+                        香り豊かなエスプレッソに、きめ細やかにスチームしたミルクを注ぎ、優しいハートのラテアートを描きました。コクのある深い味わいと、
+                        ミルクのまろやかさが絶妙に調和し、心まで温まる一杯に。リラックスしたいひとときに、ぜひお楽しみください。
+                    </p>
                 </section>
                 <section>
                     <img src="./common/images/home/drink_02.jpg" alt="ドリンク2">
-                    <h4>name</h4>
-                    <p>説明</p>
+                    <h4>リッチブレンド・アイスカフェラテ</h4>
+                    <p>
+                        深みのあるコクと香ばしい風味が特徴のアイスコーヒーに、なめらかでクリーミーなミルクを注ぎました。グラスの中で美しく広がるミルクが、
+                        コーヒーと絶妙に混ざり合い、まろやかな味わいを生み出します。氷のひんやり感とともに、贅沢なカフェタイムをお楽しみください。
+                    </p>
                 </section>
-                <p>MORE → </p>
+                <div>
+                    <a href="./menu/index.html?tab=drink" class="drink_radio">MORE →</a>
+                </div>
             </div>
         </div>
         <div class="ACCESS">
@@ -110,14 +130,18 @@
                 松江駅から徒歩6分<br>
                 <br>
                 〒690-0001<br>
-                島根県 松江市 東朝日町74-74<br>
+                島根県 松江市 東朝日町74<br>
                 <br>
                 <a href="tel:0852-31-1500">TEL:0852-31-1500</a><br>
                 FAX:0852-31-1501
             </p>
-            <p>MORE → </p>
+            <div>
+                <a href="./access/index.html">MORE → </a>
+            </div>
         </div>
-        <a href="index.html #header"><img src="./common/images/home/PAGE TOP.png" alt="PAGE TOP"></a>
+        <a href="index.html #header" class="page_top">
+            <img src="./common/images/home/PAGE TOP.png" alt="PAGE TOP">
+        </a>
     </main>
     <footer id="footer">
         <img src="./common/images/home/logo.png" alt="LOGO">
@@ -128,5 +152,8 @@
             <a href="./contact/index.html">CONTACT</a>
         </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./common/js/script.js"></script>
 </body>
 </html>
