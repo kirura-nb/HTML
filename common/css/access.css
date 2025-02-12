@@ -1,0 +1,7 @@
+@media (min-width: 62.5rem) {
+    .top_img {
+        top: -200px;
+        height: 1000px;
+        object-fit: cover;
+    }
+}
