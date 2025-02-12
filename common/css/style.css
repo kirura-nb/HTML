@@ -38,7 +38,8 @@ img {
 /* PC */
 @media (min-width: 62.5rem) {
     #header {
-
+        position: static;
+        height: 950px;
     }
 }
 
@@ -50,6 +51,13 @@ img {
     background-color: #f19f56;
     z-index: 999;
 }
+/* PC */
+@media (min-width: 62.5rem) {
+    #top_menu {
+        display: none;
+    }
+}
+
 .logo div {
     width: 80px;
     height: 80px;
@@ -146,6 +154,7 @@ li a {
 }
 @media (min-width: 62.5rem) {
     .top_img {
+        padding: 0;
         width: 100%;
         height: auto;
     }
@@ -161,6 +170,11 @@ li a {
     text-align: center;
     font-size: 26px;
 }
+@media (min-width: 62.5rem) {
+    .home1 h1 {
+        padding: 250px 0 50px 0;
+    }
+}
 
 .home1 h2, .home1 p {
     margin: 0 0 25px 0;
@@ -168,6 +182,14 @@ li a {
 }
 h2 {
     color: #f19f56;
+}
+@media (min-width: 62.5rem) {
+    .home1 h2 {
+        padding-left: 300px;
+    }
+    .home1 p {
+        padding: 0 315px;
+    }
 }
 
 .food_scroll {
@@ -195,6 +217,15 @@ h2 {
 .food_scroll:hover .food_wrapper {
     animation-play-state: paused;
 }
+@media (min-width: 62.5rem) {
+    .food_wrapper img {
+        width: 400px;
+        height: auto;
+        padding: 20px 5px 70px 5px;
+        flex-shrink: 0;
+    }
+}
+
 
 /* MENU */
 .MENU {
@@ -203,6 +234,11 @@ h2 {
 .MENU h2 {
     margin: 0;
     padding: 70px 0 20px 20px;
+}
+@media (min-width: 62.5rem) {
+    .MENU h2 {
+        padding-left: 300px;
+    }
 }
 
 .FOOD, .DRINK, #tab-3 div {
@@ -230,14 +266,30 @@ h2 {
     margin: 0 0 40px 0;
     padding: 0 30px;
 }
-.FOOD div, .DRINK div, .ACCESS div {
+.FOOD div:last-child, .DRINK div:last-child {
     text-align: left;
     padding: 0 30px 60px;
 }
 .food_radio, .drink_radio, .ACCESS div a {
     font-weight: bold;
 }
-
+@media (min-width: 62.5rem) {
+    .FOOD div, .DRINK div {
+        display: flex;
+        padding: 0 315px;
+    }
+    .FOOD h3, .DRINK h3, .ACCESS h3 {
+        padding-left: 310px;
+    }
+    .FOOD img, .DRINK img {
+        margin-bottom: 7px;
+        width: 550px;
+        height: auto;
+    }
+    .FOOD div:last-child, .DRINK div:last-child {
+        padding-left: 310px;
+    }
+}
 
 .ACCESS {
     text-align: center;
@@ -249,7 +301,33 @@ h2 {
     padding-bottom: 20px;
     width: 350px;
 }
-
+.access_div {
+    padding-bottom: 60px;
+}
+.access_div_div {
+    text-align: left;
+    padding-left: 30px;
+}
+.access_div_div p {
+    padding: 0;
+}
+@media (min-width: 62.5rem) {
+    .ACCESS h2 {
+        padding-left: 300px;
+    }
+    .access_div {
+        display: flex;
+        padding-left: 315px;
+    }
+    .ACCESS iframe {
+        width: 500px;
+        height: 400px;
+        padding-left: 30px;
+    }
+    .access_div_div {
+        padding-left: 120px;
+    }
+}
 .page_top {
     display: none; /* モバイルのみ */
 }
@@ -266,8 +344,28 @@ h2 {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #333;
 }
+@media (min-width: 62.5rem) {
+    #header h1 {
+        text-align: center;
+        margin: 0;
+        top: 50%;
+        position: static;
+        position: relative;
+        z-index: 10;
+    }
+    .top_img {
+        top: 0;
+        position: absolute;
+    }
+}
 #header .h1_6 {
     margin: 252px 135px;
+}
+@media (min-width: 62.5rem) {
+    #header .h1_6 {
+        top: 350px;
+        margin: 0;
+    }
 }
 #header .h1_7 {
     margin: 252px 120px;
@@ -346,12 +444,21 @@ h2 {
     height: auto;
     padding: 15px 0;
 }
-
+@media (min-width: 62.5rem) {
+    .instagram h3 {
+        br {
+            display: none;
+        }
+    }
+    .instagram div img {
+        padding: 15px 10px;
+    }
+}
 
 
 /* ACCESS */
 .access_main h2, .map_sec h3,
-.map_sec p, .map_sec a{
+.map_sec p, .map_sec a {
     padding-left: 20px;
 }
 .access_main h2 {
@@ -360,9 +467,18 @@ h2 {
 .access_main h3 {
     font-size: 18px;
 }
-
-.store_info {
-    margin-bottom: 100px;
+.store_info_flex {
+    padding-bottom: 60px;
+}
+@media (min-width: 62.5rem) {
+    .store_info_flex {
+        display: flex;
+        padding-left: 560px;
+        padding-bottom: 100px;
+    }
+    .access_main h2 {
+        padding-left: 550px;
+    }
 }
 
 .access_map {
@@ -376,7 +492,7 @@ h2 {
     margin: 0;
 }
 
-.text_section, .map_sec div {
+.text_section, .text_section2, .map_lin {
     width: 350px;
     height: auto;
     margin: 0 20px;
@@ -415,7 +531,9 @@ h2 {
     padding: 3px 5px;
     color: #fff;
 }
-
+@media (min-width: 62.5rem) {
+    
+}
 
 /* fotter */
 #footer {
@@ -436,7 +554,21 @@ h2 {
     padding-bottom: 3px;
     font-weight: bold;
 }
-
+@media (min-width: 62.5rem) {
+    #footer {
+        display: flex;
+    }
+    #footer img {
+        padding: 10px 750px 5px 200px;
+    }
+    #footer div {
+        flex-direction: row;
+        padding-top: 30px;
+    }
+    #footer div a {
+        padding: 0 50px;
+    }
+}
 
 
 /* MENU */
